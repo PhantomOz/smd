@@ -1,7 +1,5 @@
-// $('body').css("background-color", "#1D2029");
+
 $('body').css("color", "white");
-// $('.followers').css("background-color", "#252B43");
-// $('.updates').css("background-color", "#252B43");
 
 $('input').focus(()=>{
     $('body').toggleClass("main");
@@ -12,4 +10,5 @@ $('input').focus(()=>{
     $('.foll-num').toggleClass("main-num");
     $('.over-num').toggleClass("main-num");
     $('.over-head').toggleClass("main-over");
+    $('.attribution').toggleClass("main-over");
 });

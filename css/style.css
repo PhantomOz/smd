@@ -166,6 +166,13 @@ div span{
     padding: 10px;
     border-radius: 8px;
 }
+.attribution{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
 /******************************************** Responsiveness ******************************************/
 
 /* Extra small devices (phones, 600px and down) */
@@ -276,6 +283,7 @@ div span{
     .over-head{
         margin: 10px auto;
     }
+   
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -318,6 +326,14 @@ div span{
     }
     .over-head{
         margin: 10px auto;
+    }
+    .attribution{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 20px;
     }
 }
 /******************************************** Theme Transformation ******************************************/
