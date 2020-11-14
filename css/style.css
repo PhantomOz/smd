@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.body {
+    /* text-align: center; */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1D2029;
+}
+/*********************************** font-size 14px *****************************************/
+.total, .username, .card-head, .box, .down, .up, .mode-title{
+    font-size: 14px;
+}
+/************************************ font-weight 700 ******************************************/
+.title, .total, .up, .down, .username, .foll-num, .follows, .right, .over-head, .card-head, .mode-title{
+    font-weight: 700;
+}
+/************************************ greyish color **********************************************/
+.total,.username, .follows, .card-head, .mode-title{
+    color: #878EAF;
+}
+
+/*************************************** Headings ************************************************/
+.header{
+    background-color: #20222F;
+    padding: 30px 0px 170px;
+    vertical-align: middle;
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+}
+
+.foll-num{
+    font-size: 55px;
+    margin: 20px auto 0;
+}
+.follows{
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 auto 20px;
+}
+.container {
+    vertical-align: middle;
+}
+/********************************************* details ***************************************/
+.right{
+    display: inline-block;
+    width: 42%;
+    margin: 5px;
+    font-size: 25px;
+}
+.card-head{
+    font-size: 14px;
+}
+.followers, .updates{
+    background-color: #252B43;
+}
+.followers{
+    text-align: center;
+    margin: 15px auto;
+    padding: 0px 0px 30px;
+    border-radius: 8px;
+}
+/****************************** icon up *************************************/
+.up{
+    color: hsl(163, 72%, 41%);
+}
+/*********************************************** icon down ***************************************/
+.down{
+    color: hsl(356, 69%, 56%);
+}
+/********************************************** dark mode switch ******************************************/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgb(71, 160, 194) 0.779347%, 12.7131%, rgb(60, 186, 173) 24.6469%, 62.3234%, rgb(65, 196, 155) 100%);
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background: linear-gradient(90deg, rgb(71, 160, 194) 0.779347%, 12.7131%, rgb(60, 186, 173) 24.6469%, 62.3234%, rgb(65, 196, 155) 100%);
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #26293F;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(90deg, rgb(72, 168, 192) 0%, 19.9708%, rgb(61, 181, 180) 39.9415%, 69.9708%, rgb(60, 201, 153) 100%);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transfom: translateX(26px);
+    transform: translateX(26px);
+    
+}
+.box{
+    display: inline-block;
+    width: 47%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.slider.round {
+    border-radius: 34px;
+    background: linear-gradient(90deg, rgb(72, 168, 192) 0%, 19.9708%, rgb(61, 181, 180) 39.9415%, 69.9708%, rgb(60, 201, 153) 100%);
+
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.colors{
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #2196f3;
+    margin-bottom: 25px;
+}
+.red{
+    background-color: #BF0637;
+}
+.twit-blue{
+    background-color: #1BA0F2;
+}
+.insta{
+    background: linear-gradient(90deg, rgb(252, 189, 104) 0%, 27.9347%, rgb(237, 131, 130) 55.8695%, 77.472%, rgb(225, 83, 148) 99.0745%);
+}
+.face-blue{
+    background-color: #198FF5;
+}
+div span{
+    margin-right: 10px;
+}
+.header span{
+    margin: 0;
+}
+.updates{
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+/******************************************** Responsiveness ******************************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /************************************* header-part **************************************/
+    hr{
+        display: block;
+        background-color: #878EAF;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .mode{
+        text-align: unset;
+        vertical-align: middle;
+        margin: 10px;
+    }
+    .mode-title{
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+    }
+    .swiss{
+        display: inline-block;
+        width: 53%;
+        text-align: right;
+    }
+    /************************************* Details-part *************************************/
+    .details{
+        max-width: 450px;
+    }
+    /************************************* General-part **************************************/
+    .details{
+        position: relative;
+        margin: -125px auto 0px;
+    }
+    .over-head{
+        margin: 10px auto;
+        font-size: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /************************************* header-part **************************************/
+    hr{
+        background-color: #878EAF;
+        margin: 20px auto;
+    }
+    .mode{
+        text-align: unset;
+        /* vertical-align: middle; */
+    }
+    .mode-title{
+        display: inline-block;
+        width: 42%;
+    }
+    .swiss{
+        display: inline-block;
+        width: 57%;
+        text-align: right;
+    }
+    /************************************* Details-part *************************************/
+    /************************************* General-part **************************************/
+    .details{
+        position: relative;
+        margin: -125px auto 0px;
+    }
+    .over-head{
+        margin: 10px auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /************************************* header-part **************************************/
+    .title{
+        font-size: 37px;
+    }
+    hr{
+        display: none;
+    }
+    .mode{
+        text-align: right;
+    }
+    .mode-title{
+        display: inline-block;
+        text-align: left;
+        height: 40px;
+        width: fit-content;
+    }
+    .mode-title p{
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .swiss{
+        display: inline-block;
+        width: fit-content;
+    }
+    
+    /************************************* Details-part *************************************/
+    /************************************* General-part **************************************/
+    .details{
+        position: relative;
+        margin: -125px auto 0px;
+    }
+    .over-head{
+        margin: 10px auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /************************************* header-part **************************************/
+    hr{
+        display: none;
+    }
+    .mode{
+        text-align: right;
+    }
+    /************************************* Details-part *************************************/
+    /************************************* General-part **************************************/
+    .details{
+        position: relative;
+        margin: -125px auto 0px;
+    }
+    .over-head{
+        margin: 10px auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /************************************* header-part **************************************/
+    hr{
+        display: none;
+    }
+    .title{
+        font-size: 43px;
+    }
+    .mode{
+        text-align: right;
+    }
+    /************************************* Details-part *************************************/
+    /************************************* General-part **************************************/
+    .details{
+        position: relative;
+        margin: -125px auto 0px;
+    }
+    .over-head{
+        margin: 10px auto;
+    }
+}
+/******************************************** Theme Transformation ******************************************/
+.main{
+    background-color: white;
+}
+.main-header{
+    background-color: #F8F9FE;
+    color: #1C1F26;
+}
+.main-card{
+    background-color: #F0F3FA;
+}
+.main-num{
+    color: #1D2029;
+}
+.main:before{
+    background-color: white;
+}
+.main-over{
+    color: #878EAF;
+}
